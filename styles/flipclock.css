@@ -1,4 +1,5 @@
 /* Get the bourbon mixin from http://bourbon.io */
+
 /* Reset */
 .flip-clock-wrapper * {
     -webkit-box-sizing: border-box;
@@ -38,7 +39,16 @@
 /* Main */
 .flip-clock-wrapper {
   font: normal 11px "Helvetica Neue", Helvetica, sans-serif;
-  -webkit-user-select: none; }
+  /* Standard CSS property for modern browsers */
+user-select: none;
+
+/* Vendor-prefixed versions for compatibility */
+-webkit-user-select: none; /* Chrome, Safari, and newer versions of Edge */
+-moz-user-select: none; /* Firefox */
+-ms-user-select: none; /* Internet Explorer and Microsoft Edge (legacy) */
+
+}
+
 
 .flip-clock-meridium {
   background: none !important;
@@ -431,11 +441,12 @@
     opacity: 0; } }
 
     /* In your styles.css file or in a <style> block in your HTML file */
-.logo {
-  text-align: center;
-  padding-top: 20px; /* Adjust this value to control vertical positioning */
-}
-
-#logo {
-  max-width: 50%; /* Ensure the logo doesn't exceed the container width */
-}
+    .logo {
+      text-align: center;
+      padding-top: 20px; /* Adjust this value to control vertical positioning */
+    }
+    
+    #logo {
+      max-width: 50%; /* Ensure the logo doesn't exceed the container width */
+    }
+    

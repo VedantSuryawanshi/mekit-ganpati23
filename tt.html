@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countdown Timer</title>
+    <link rel="stylesheet" href="styles/flipclock.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .countdown {
+            font-size: 24px; /* Adjust the font size as needed */
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="countdown"></div>
+    </div>
+    <script src="scripts/jquery-3.1.1.min.js"></script>
+    <script src="scripts/flipclock.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            // Set the target date and time (September 30, 2023, 12:11 PM)
+            var targetDate = new Date("2023-09-30T12:11:00").getTime();
+
+            // Calculate the time remaining
+            var now = new Date().getTime();
+            var timeRemaining = targetDate - now;
+
+            // Initialize FlipClock with the calculated time remaining
+            var clock = $('.countdown').FlipClock(timeRemaining / 1000, {
+                clockFace: 'DailyCounter',
+                countdown: true
+            });
+        });
+    </script>
+</body>
+</html>
