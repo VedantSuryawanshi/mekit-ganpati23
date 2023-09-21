@@ -1,8 +1,8 @@
 body {
-  background-color: #000;
+  background-color: #ff;
   font-family: "Lucida Console", Monaco, monospace;
   text-align: center;
-  color: #fff;
+  color: #000;
 }
 body .countdown-header {
   color: #dfe0e6;
@@ -10,7 +10,7 @@ body .countdown-header {
 body .countdown-text {
   font-size: 16px;
   margin-bottom: 50px;
-  color: #fff;
+  color: #000;
 }
 body .countdown-container {
   margin: 20px auto;
@@ -24,7 +24,7 @@ body .countdown-container .countdown-text small.red {
   color: #FF0000;
 }
 body .countdown-container .countdown .flip-clock-label {
-  color: #fff;
+  color: #000;
   text-transform: uppercase;
 }
 
@@ -85,7 +85,7 @@ body .countdown-container .countdown .flip-clock-label {
     display: none;
   }
   .countdown-container .countdown .flip-clock-label {
-    font-size: 12px;
+    font-size: 20px;
   }
 }
 
