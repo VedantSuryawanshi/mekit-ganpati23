@@ -1,8 +1,8 @@
 body {
-  background-color: #ff;
+  background-color: #fff;
   font-family: "Lucida Console", Monaco, monospace;
   text-align: center;
-  color: #000;
+  color: #fff;
 }
 body .countdown-header {
   color: #dfe0e6;
@@ -10,14 +10,14 @@ body .countdown-header {
 body .countdown-text {
   font-size: 16px;
   margin-bottom: 50px;
-  color: #000;
+  color: #fff;
 }
 body .countdown-container {
   margin: 20px auto;
 }
 body .countdown-container .countdown-text {
   font-size: 16px;
-  color: #88898c;
+  color: #000;
 }
 body .countdown-container .countdown-text small.red {
   font-size: 16px;
